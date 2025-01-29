@@ -89,10 +89,11 @@ class TestBooksCollector:
 
 
 # тест метода get_books_genre
-    def test_get_books_genre_book_not_add_dictionary_is_empty(self):
+    def test_get_books_genre_invalid_name_book_not_add_in_dictionary(self):
         collector = BooksCollector()
+        collector.add_new_book('Мастер и маргарита')
         collector.add_new_book('Приключения Тома Сойера и Гекльберри Финна')  # в названии более 40 символов
-        assert collector.books_genre == {}
+        assert collector.books_genre == {'Мастер и маргарита': ''}
 
 
 # тест метода get_books_for_children

@@ -15,16 +15,16 @@
 - написан параметризованный тест: test_get_books_with_specific_genre_get_list. Он проверяет, что при запросе книг с определенным жанром выводится список книг только этого жанра. 
 
 5. get_books_genre
-- написан тест test_get_book_genre_name_in_books_genre_book_genre_get, он проверяет вывод жанра по названию добавленной в словарь книги.
+- написан тест test_get_books_genre_invalid_name_book_not_add_in_dictionary, он проверяет, что в словарь books_genre не добавляются книги с некорректным названием.
 
 6. get_books_for_children
 - написан тест test_get_books_for_children_valid_genre_get_list_of_books, который проверяет вывод списка книг с жанрами, которых нет в списке возрастного рейтинга (genre_age_rating). 
 
 7. add_book_in_favorites
-- написан параметризованный тест. Внутри него 2 теста: test_add_book_in_favorites_book_from_list и test_add_book_in_favorites_book_not_in_list. Первый проверяет, что книга, которая есть в словаре books_genre, может быть добавлена в список избранных книг. Второй проверяет, что книга не из словаря не добавляется с список избранных книг. 
+- написан параметризованный тест. Внутри него 2 теста: test_add_book_in_favorites_book_from_list и test_add_book_in_favorites_book_not_in_list. Первый проверяет, что книга, которая есть в словаре books_genre, может быть добавлена в список избранных книг. Второй проверяет, что книга не из словаря не добавляется в список избранных книг. 
 
 8. delete_book_from_favorites
 - написан метод test_delete_book_from_favorites_correct_name_of_book_in_favorites_delete_book, он проверяет удаление книги из списка избранных книг (предварительно книга была добавлена в избранное).
 
 9. get_list_of_favorites_books
-- написан тест test_get_list_of_favorites_books_name_in_books_genre_get_list, он проверяет, что количество книг в избранном соответствует количеству книг, которые туда были добавлены.
+- написан тест test_get_list_of_favorites_books_name_in_books_genre_get_list, он проверяет, что количество книг в избранном соответствует количеству книг, которые туда были добавлены. 
